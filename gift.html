@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>特色礼品</title>
+    <link rel="stylesheet" href="./css/pgy-css/swiper.min.css">
+    <link rel="stylesheet" href="./css/pgy-css/reset.css">
+    <link rel="stylesheet" href="./css/pgy-css/gift.css">
+</head>
+
+<body>
+    <!-- 整体页面 整个 -->
+    <div class="gift">
+        <!-- 轮播 -->
+        <div class="swiper-container wrap">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="javascript:;"><img src="./img/pgyimg/banner1.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="javascript:;"><img src="./img/pgyimg/banner2.jpg" alt=""></a></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <!-- 新品 上市-->
+        <div class="new wrap">
+            <div class="newProduct">
+                <div>
+                    <p>新品上新<span>new</span></p>
+                    <hr>
+                    <h3>又有美美的礼品上新啦！</h3>
+                </div>
+            </div>
+            <div class="sale">
+                <div>
+                    <p>施华洛世奇<span>sale</span></p>
+                    <hr>
+                    <h3>国际品质   大牌保证 </h3>
+                </div>
+            </div>
+            <div class="cute">
+                <div>
+                    <p>Hello Kitty<span>cute</span></p>
+                    <hr>
+                    <h3>没有比这里更萌的啦！</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/pgy-js/gift.js"></script>
+    <script src="./js/pgy-js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            }
+        });
+    </script>
+</body>
+
+</html>
