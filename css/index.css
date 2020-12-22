@@ -1,81 +1,297 @@
 ﻿.top-banner {
-  background: url(../img/banner-top.png) 50% 0px no-repeat;
-  height: 80px;
+    background: url(../img/banner-top.png) 50% 0px no-repeat;
+    height: 80px;
 }
+
+.icon {
+    display: inline-block;
+    background-image: url(../img/common_sprite.png);
+    background-repeat: no-repeat;
+    vertical-align: top;
+}
+
 .top-nav {
-  min-width: 1200px;
-  height: 40px;
-  font-size: 12px;
-  color: #71797f;
-  background-color: #f3f5f7;
+    min-width: 1200px;
+    height: 40px;
+    font-size: 12px;
+    color: #71797f;
+    background-color: #f3f5f7;
 }
+
 .top-nav li span:hover {
-  color: #ff734c;
+    color: #ff734c;
 }
-.top-nav1{
+
+.top-nav1 {
     display: flex;
     justify-content: space-between;
 }
+
 .top-nav-left {
     width: 360px;
     height: 40px;
-  display: flex;
+    display: flex;
 }
+
 .top-nav li {
-  padding: 0 16px;
-  line-height: 40px;
+    padding: 0 16px;
+    line-height: 40px;
 }
+
 .top-nav-left li:first-child {
-  padding-left: 0;
+    padding-left: 0;
 }
+
 .top-nav-left .icon {
-  width: 14px;
-  height: 14px;
-  margin-top: 12px;
-  margin-right: 4px;
-  display: inline-block;
-  background-image: url(../img/common_sprite.png);
-  background-repeat: no-repeat;
-  vertical-align: top;
+    width: 14px;
+    height: 14px;
+    margin-top: 12px;
+    margin-right: 4px;
+    display: inline-block;
+    background-image: url(../img/common_sprite.png);
+    background-repeat: no-repeat;
+    vertical-align: top;
 }
+
 .top-nav-left .icon-star {
-  background-position: 0 -21px;
+    background-position: 0 -21px;
 }
+
 .top-nav-left .icon-weixin {
-  background-position: -24px -21px;
+    background-position: -24px -21px;
 }
+
 .top-nav-left .icon-mobile {
-  background-position: -48px -21px;
+    background-position: -48px -21px;
 }
+
 .top-nav-right {
     width: 618px;
     height: 40px;
-  display: flex;
+    display: flex;
 }
-.top-nav-right li:first-child {
-  padding-right: 0;
-}
+
 .top-nav-right li:last-child {
-  padding-right: 0;
+    padding-right: 0;
 }
+
+.slogan {
+    padding-left: 0;
+}
+
+.top-nav-right .slogan span:hover {
+    color: #71797f;
+}
+
 .top-nav-right .icon-arrow {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  margin-left: 5px;
-  background-image: url(../img/top_nav_arrow.png);
-  background-position: top center;
-  background-size: 8px 8px;
-  transition: transform 0.2s, -webkit-transform 0.2s;'\\\'
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-left: 5px;
+    background-image: url(../img/top_nav_arrow.png);
+    background-position: top center;
+    background-size: 8px 8px;
+    transition: transform 0.2s, -webkit-transform 0.2s;
 }
+
 .text-primary {
     color: #ff6a00;
 }
-.header-container{
+
+.menu-dropdown {
+    position: relative;
+}
+
+.dropdown-box {
+    width: 93px;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 6px 0;
+    box-sizing: content-box;
+    display: none;
+    position: absolute;
+    box-sizing: border-box;
+    top: 39px;
+    left: -1px;
+    padding: 12px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #232628;
+    background: #fff;
+    border: 1px solid #E9ECF0;
+    border-top-color: transparent;
+    text-align: center;
+    z-index: 1000;
+}
+
+.dropdown-box span {
+    display: block;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #71797F;
+}
+
+.open {
+    background: #fff;
+}
+
+.open .dropdown-box {
+    display: block;
+}
+
+.open .icon-arrow {
+    transform: rotate(180deg);
+}
+
+
+/* logo */
+
+.header-sel {
+    position: relative;
     height: 120px;
     background-color: #F7F9FA;
 }
-.me
-.dropdown-box{
-    
+
+.header-container {
+    height: 97px;
+    color: #232628;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-sel .logo {
+    width: 238px;
+    height: 100%;
+}
+
+.header-sel .logo a {
+    display: inline-block;
+    width: 238px;
+    height: 60px;
+    margin-top: 30px;
+    background-image: url(../img/common_sprite.png);
+    background-repeat: no-repeat;
+    background-position: 0 -248px;
+}
+
+.header-sel .search {
+    margin-left: 55px;
+    width: 440px;
+    padding-top: 25px;
+    font-size: 0;
+}
+
+.header-sel .search-box {
+    position: relative;
+    width: 440px;
+    height: 48px;
+    border-radius: 24px;
+    border: 2px solid #FF734C;
+    overflow: hidden;
+}
+
+.search-box .search-box-icon {
+    display: inline-block;
+    width: 54px;
+    height: 100%;
+    vertical-align: top;
+    text-align: center;
+}
+
+.search-box .search-box-icon .icon-search {
+    width: 16px;
+    height: 16px;
+    margin-top: 16px;
+    background-position: 0 -48px;
+    display: inline-block;
+    background-image: url(../img/common_sprite.png);
+    background-repeat: no-repeat;
+    vertical-align: top;
+}
+
+.search-box .search-box-input {
+    width: 264px;
+    height: 100%;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+}
+
+.search-box .search-box-btn {
+    position: absolute;
+    top: 0;
+    right: -2px;
+    width: 118px;
+    height: 48px;
+}
+
+.search-box-btn .btn-primary {
+    width: 100%;
+    height: 100%;
+    border-radius: 24px 0 0 24px;
+    outline: none;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #FF734C;
+    background: linear-gradient(90deg, #ff734c 0%, #ff3d12 100%);
+    border: 1px solid transparent;
+    color: #ffffff;
+    border-color: #ff6a00;
+}
+
+.search-box-hotwords {
+    margin-top: 8px;
+    margin-left: 44px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #B4BABF;
+}
+
+.search-box-hotwords span {
+    margin: 0 12px;
+}
+
+.service {
+    width: 350px;
+    height: 61px;
+    padding-top: 25px;
+    line-height: 18px;
+    text-align: right;
+}
+
+.service .service-item {
+    display: inline-block;
+    font-size: 14px;
+    color: #71797F;
+    vertical-align: top;
+}
+
+.service-item .icon-phone {
+    width: 24px;
+    height: 24px;
+    margin-top: 12px;
+    margin-right: 8px;
+    background-position: 0 -102px;
+}
+
+.service-item div {
+    display: inline-block;
+    margin-top: 15px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.icon-headset {
+    width: 24px;
+    height: 24px;
+    margin-top: 12px;
+    margin-right: 8px;
+    background-position: 0 -102px;
+    background-position: -34px -102px;
+}
+
+.service .item2 {
+    margin-left: 40px;
 }
