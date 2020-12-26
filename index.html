@@ -79,9 +79,187 @@
             </div>
         </div>
     </div>
+    <div class="navi">
+        <div class="navi-container wrap">
+            <div class="navi-title">
+                <h3>
+                    <span class="icon icon-category">
+                    </span> 所有分类
+                </h3>
+                <div class="dropdown-cate">
+                    <div class="dropdown-cate-item">
+                        <h4>
+                            鲜花用途
+                        </h4>
+                        <ul class="cate-list">
+                            <li>
+                                爱情鲜花
+                            </li>
+                            <li>
+                                生日鲜花
+                            </li>
+                            <li>
+                                友情鲜花
+                            </li>
+                            <li>
+                                问候长辈
+                            </li>
+                            <li>
+                                探病慰问
+                            </li>
+                            <li>
+                                道歉鲜花
+                            </li>
+                            <li>
+                                祝贺鲜花
+                            </li>
+                            <li>
+                                婚庆鲜花
+                            </li>
+                            <li>
+                                商务鲜花
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropdown-cate-item">
+                        <h4>
+                            鲜花花材
+                        </h4>
+                        <ul class="cate-list">
+                            <li>
+                                玫瑰
+                            </li>
+                            <li>
+                                康乃馨
+                            </li>
+                            <li>
+                                百合
+                            </li>
+                            <li>
+                                向日葵
+                            </li>
+                            <li>
+                                扶郎
+                            </li>
+                            <li>
+                                郁金香
+                            </li>
+                            <li>
+                                马蹄莲
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropdown-cate-item">
+                        <h4>
+                            永生花
+                        </h4>
+                        <ul class="cate-list">
+                            <li>
+                                永生瓶花
+                            </li>
+                            <li>
+                                经典花盒
+                            </li>
+                            <li>
+                                特色永生花
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropdown-cate-item">
+                        <h4>
+                            蛋糕
+                        </h4>
+                        <ul class="cate-list">
+                            <li>
+                                元租
+                            </li>
+                            <li>
+                                幸福西饼
+                            </li>
+                            <li>
+                                21cake
+                            </li>
+                            <li>
+                                诺心蛋糕
+                            </li>
+                            <li>
+                                窝夫小子
+                            </li>
+                            <li>
+                                BONCAKE
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropdown-cate-item">
+                        <h4>
+                            礼品/公仔/绿植
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <ul class="navi-nav">
+                <li>
+                    鲜花
+                </li>
+                <li>
+                    永生花
+                </li>
+                <li>
+                    蛋糕
+                </li>
+                <li>
+                    礼品
+                </li>
+                <li>
+                    巧克力
+                </li>
+                <li>
+                    花语大全
+                </li>
+                <li>
+                    企业团购
+                </li>
+                <li>
+                    设计师甄选鲜花
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="mainCarousel">
+        <div class="swiper-container carousel">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide carouselimg" style="background-image:url(img/carousel1.jpg)"></div>
+                <div class="swiper-slide carouselimg" style="background-image:url(img/carousel2.jpg)"></div>
+                <div class="swiper-slide carouselimg" style="background-image:url(img/carousel3.jpg)"></div>
+                <div class="swiper-slide carouselimg" style="background-image:url(img/carousel4.jpg)"></div>
+                <div class="swiper-slide carouselimg" style="background-image:url(img/carousel5.jpg)"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination swiper-pagination-white"></div>
+            <!-- Add Arrows -->
+            <div class="carousel-wrapper wrap">
+                <div class="swiper-button-next swiper-button-white carouselnext"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
+            </div>
+        </div>
+    </div>
 </header>
 
 <script src="js/index.js"></script>
+<script src="js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 30,
+        effect: 'fade',
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false,
+        loop: true
+    });
+</script>
 
 <body>
 

@@ -295,3 +295,154 @@
 .service .item2 {
     margin-left: 40px;
 }
+
+
+/* 轮播导航 */
+
+.navi {
+    width: 100%;
+    height: 51px;
+}
+
+.navi-title {
+    position: relative;
+    width: 240px;
+    height: 52px;
+    float: left;
+    border-radius: 12px 12px 0 0;
+    background-color: #FF734C;
+    background: linear-gradient(90deg, #ff734c 0%, #ff3d12 100%);
+}
+
+.navi-title h3 {
+    padding-left: 24px;
+    font-size: 18px;
+    line-height: 52px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navi-title .dropdown-cate {
+    position: absolute;
+    top: 52px;
+    left: 0;
+    height: 480px;
+    padding-top: 10px;
+    color: #fff;
+    background: url(../img/black-bg.png);
+    z-index: 999;
+}
+
+.navi-title .dropdown-cate-item {
+    padding: 9px 0px 9px 20px;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+}
+
+.dropdown-cate-item h4 {
+    margin-top: 2px;
+    padding-left: 4px;
+    padding-right: 28px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.dropdown-cate-item ul {
+    margin-top: 5px;
+}
+
+.dropdown-cate-item ul li {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0 4px;
+}
+
+.navi-title .icon-category {
+    width: 24px;
+    height: 24px;
+    margin-top: 14px;
+    margin-right: 4px;
+    background-position: -68px -102px;
+}
+
+.navi-nav {
+    margin: 0 0 0 265px;
+    height: 100%;
+    list-style: none;
+}
+
+.navi-nav li {
+    float: left;
+    margin: 0 14px;
+    font-size: 18px;
+    color: #232628;
+    font-weight: bold;
+    line-height: 52px;
+    margin: 0 14px;
+}
+
+.navi-nav li:hover {
+    color: #FF734C;
+}
+
+.mainCarousel {
+    position: relative;
+    min-width: 1200px;
+    height: 480px;
+    width: 100%;
+}
+
+.mainCarousel .carouselimg {
+    width: 100%;
+    height: 480px;
+}
+
+.mainCarousel .carouselimg {
+    background-image: url(../img/carousel1.jpg);
+    width: 100% !important;
+    opacity: 0;
+    transform: translate3d(-385px, 0px, 0px);
+}
+
+.carousel .swiper-wrapper,
+.carousel {
+    margin: 0;
+    width: 100%;
+}
+
+.mainCarousel .carouselnaxt {
+    position: absolute;
+    top: -266px;
+    width: 52px;
+    height: 52px;
+    opacity: 1;
+}
+
+.mainCarousel:hover .carousel-wrapper {
+    opacity: 1;
+}
+
+.carousel-wrapper {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 480px;
+    z-index: 50;
+    opacity: 0;
+}
+
+.carousel-wrapper .swiper-button-next {
+    width: 52px;
+    height: 52px;
+    z-index: 100;
+}
+
+.carousel-wrapper .swiper-button-prev {
+    width: 52px;
+    height: 52px;
+    z-index: 100;
+    left: 257px;
+    background-image: linear-gradient(to right, transparent 0%, transparent 100%);
+}
