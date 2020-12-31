@@ -1,0 +1,38 @@
+header{
+
+}
+.wrap{
+    width: 1200px;
+    margin: auto;
+}
+.header-top{
+    height: 40px;
+    line-height: 40px;
+}
+.header-top-left{
+    float: left;
+    height: 40px;
+}
+.header-top-left span:first-child{
+     margin-right: 10px;
+}
+.header-top-left span{
+    margin: 0 10px;
+}
+.header-top-left a{
+    color: #666;
+}
+.header-top-right{
+    float: right;
+    height: 40px;
+}
+.header-top-right li{
+    float: left;
+    margin: 0 10px;
+}
+.header-top-right li:last-child{
+    margin-left: 10px;
+}
+.header-top-right a{
+    color: #666;
+}

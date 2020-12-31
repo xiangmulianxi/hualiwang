@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/pgy-css/reset.css">
+    <link rel="stylesheet" href="./css/pgy-css/detail.css">
+</head>
+
+<body>
+    <div class="app">
+        <header class="wrap">
+            <div class="header-top">
+                <div class="header-top-left">
+                    <span><a href="javascript:;">收藏鲜花网(hua.com)</a></span>
+                    <span><a href="javascript:;">关注微信</a></span>
+                    <span><a href="javascript:;">花礼网app</a></span>
+                </div>
+                <div class="header-top-right">
+                    <ul>
+                        <li><a href="javascript:;">你好，请登录<li>注册</li></a></li>
+                        <li><a href="javascript:;"></a>订单查询</li>
+                        <li><a href="javascript:;">客户服务 <i></i></a></li>
+                        <li><a href="javascript:;">购物车(0)</a></li>
+                        <li><a href="javascript:;">中国鲜花礼品网:中国鲜花网领先品牌</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+
+            </div>
+        </header>
+        <div id="render"></div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        var render = document.getElementById('render')
+        axios.get("http://localhost:3000/jump", {
+            params: {
+                id: localStorage.getItem('jump-id')
+            }
+        }).then(res => {
+            console.log(res.data.data[0]);
+            console.log(localStorage.getItem('jump-id'));
+
+            render.innerHTML = `
+                     <p>${res.data.data[0].lable}</p>
+                     <img src="${res.data.data[0].url}" alt="图片丢失">
+            ` 
+        }).catch(err => {
+            console.log(err);
+        })
+    </script>
+</body>
+
+</html>
