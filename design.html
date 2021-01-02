@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="./js/axios.min.js"></script>
+    <link rel="stylesheet" href="./css/design.css">
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+
+<body>
+    <div class="top-nav">
+        <div class="top-nav1 wrap">
+            <ul class="top-nav-left">
+                <li><span><span class="icon icon-star"></span>收藏鲜花网(hua.com)</span>
+                </li>
+                <li><span><span class="icon icon-weixin"></span>关注微信</span>
+                </li>
+                <li><span><span class="icon icon-mobile"></span>花礼网app</span>
+                </li>
+            </ul>
+            <ul class="top-nav-right">
+                <li><span>你好，请登录 </span>&nbsp;&nbsp;<span> 注册</span></li>
+                <li><span>订单查询</span></li>
+                <li class="menu-dropdown"><span> 客户服务 </span>
+                    <span class="icon-arrow"></span>
+                    <div class="dropdown-box">
+                        <span>在线付款</span>
+                        <span>售后服务</span>
+                        <span>帮助中心</span>
+                        <span>配送范围</span>
+                        <span>留言反馈</span>
+                    </div>
+                </li>
+                <li><span> 购物车 </span><span class="text-primary" id="gwcCount">(0)</span></li>
+                <li class="slogan">
+                    <span>中国鲜花礼品网:中国鲜花网领先品牌</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <header>
+        <div class="logo">
+            <h1>
+                <a href="/" class="logo-bd">中国鲜花礼品网(花礼网)</a>
+            </h1>
+        </div>
+        <div class="search">
+            <form name="i_search" method="get">
+                <div class="input-group">
+                    <input name="keyword" type="text" class="control" placeholder="商品关键词">
+                    <span>
+                        <button class="btn" type="button">搜索</button>
+                    </span>
+                </div>
+            </form>
+
+        </div>
+        <div class="service">
+            <span class="ico ico-phone"></span>400-889-8188
+            <a id="header-chat" href="javascript:void(0);"><span class="ico ico-headset"></span>在线客服</a>
+        </div>
+    </header>
+    <!-- 列表 -->
+    <div class="list-top">
+        <div class="list wrap">
+            <div class="list-lt">
+                <h3>全部商品导购 <span class="iconfont icon-arrow"></span></h3>
+                <div class="list-location">
+                    <h4>鲜花</h4>
+                    <ul>
+                        <li>爱情鲜花</li>
+                        <li>生日鲜花</li>
+                        <li>友情鲜花</li>
+                        <li>问候长辈</li>
+                        <li>祝贺鲜花</li>
+                        <li>婚庆鲜花</li>
+                        <li>探病慰问</li>
+                        <li>道歉鲜花</li>
+                        <li>开业花篮</li>
+                    </ul>
+                    <h4>永生花</h4>
+                    <ul>
+                        <li>经典花盒</li>
+                        <li>巨形玫瑰</li>
+                        <li>薰衣草</li>
+                        <li>永生瓶花</li>
+                        <li>特色永生花</li>
+                    </ul>
+                    <h4>礼品</h4>
+                    <ul>
+                        <li>泰国保鲜花</li>
+                        <li>音乐盒</li>
+                        <li>水晶内雕</li>
+                        <li>金箔花</li>
+                        <li>化妆镜</li>
+                        <li>香薰系列</li>
+                        <li>音乐睡枕</li>
+                        <li>花瓶/相框</li>
+                        <li>卡通花束</li>
+                        <li>品牌公仔</li>
+                        <li>首饰</li>
+                        <li>Giftstalk精选</li>
+                        <li>创意礼品</li>
+                        <li>礼品卡</li>
+                        <li>多肉植物盆栽</li>
+                    </ul>
+                    <h4>绿植</h4>
+                    <ul>
+                        <li>绿色植物</li>
+                        <li>盆栽花卉</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="list-gt">
+                <ul>
+                    <li>首页</li>
+                    <li>鲜花</li>
+                    <li>永生花</li>
+                    <li>蛋糕</li>
+                    <li>礼品</li>
+                    <li>巧克力</li>
+                    <li>花语大全</li>
+                    <li>设计师臻选鲜花</li>
+                    <li>圣诞节鲜花礼物</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="banner-video">
+            <video id="video" class="video" poster="https://img02.hua.com/zhuanti/sumptuousflower/pc/sumptuous-videobg.jpg" loop="" autoplay="autoplay" muted>
+                <source src="https://img02.hua.com/zhuanti/sumptuousflower/pc/z1920X720.test.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="banner-info">
+            <div class="com-width">
+                <div class="banner-info-h1">设计师臻选</div>
+                <div class="banner-info-h2">送出的每束花均由资深花艺师亲手制作</div>
+                <div class="banner-info-tips">
+                    <p>30多个核心城市已开通服务，其它城市陆续开通...</p>
+                </div>
+                <ul class="banner-info-desc">
+                    <li><i class="hcon hcon-flower"></i>精选稀有花材，给你不一样的视觉享受</li>
+                    <li><i class="hcon hcon-camera"></i>送前花束实拍，效果提前知道</li>
+                    <li><i class="hcon hcon-chat"></i>VIP客服一对一服务,全程尽享尊贵体验</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 黑色 -->
+    <div class="product black">
+        <div class="com-width">
+            <div class="product-title">高端花盒系列</div>
+            <div class="product-item">
+                <div class="product-item-pic">
+                    <img src="https://img02.hua.com/zhuanti/sumptuousflower/pc/9012296.jpg">
+                </div>
+                <div class="product-item-info">
+                    <div class="product-item-info__hd">
+                        <div class="product-info-left">
+                            <p class="product-info-name">情迷尼斯</p>
+                            <p class="product-info-tag">糖果玫瑰<span>76cm长形礼盒</span></p>
+                        </div>
+                        <div class="product-info-right">
+                            <p>RMB</p>
+                            <div class="product-info-price" data-id="9012296">689</div>
+                        </div>
+                    </div>
+                    <div class="product-item-info__desc">花材上选用的是稀有玫瑰品种A级玫瑰，每一朵的花型都要求完美，糖果玫瑰如其名，有着甜美的色彩和香味。为玫瑰定制了专属的礼盒，完美的细节彰显品质。</div>
+                </div>
+            </div>
+            <div class="product-list">
+                <!-- <a class="product-item" href="#">
+                    <div class="product-item-pic">
+                        <img src="https://img02.hua.com/zhuanti/sumptuousflower/m/9012300.jpg"></div>
+                    <div class="product-item-info">
+                        <div class="product-item-info__hd">
+                            <div class="product-info-left">
+                                <p class="product-info-name">赤道花园</p>
+                                <p class="product-info-tag">红拂玫瑰<span>76cm长形礼盒</span></p>
+                            </div>
+                            <div class="product-info-right">
+                                <p>RMB</p>
+                                <div class="product-info-price" data-id="9012300">689</div>
+                            </div>
+                        </div>
+                        <div class="product-item-info__desc">采撷最娇艳的玫瑰，经设计师妙手点拨，将芬芳馥郁的气息融入，轻轻打开，芬芳扑面袭来，沉醉在那花香醉人的奇幻世界...如心脏般大小的玫瑰肆意绽放，为高端鲜花爱好者们营造出了一个静谧与舒适的氛围，赏心悦目！</div>
+                    </div>
+                </a> -->
+            </div>
+        </div>
+    </div>
+    <div class="product white">
+        <div class="com-width">
+            <div class="product-title">主题花束系列</div>
+            <div class="product-item">
+                <div class="product-item-pic">
+                    <img src="https://img02.hua.com/zhuanti/sumptuousflower/m/9012323_full.jpg">
+                </div>
+                <div class="product-item-info">
+                    <div class="product-item-info__hd">
+                        <div class="product-info-left">
+                            <p class="product-info-name">火热的爱</p>
+                            <p class="product-info-tag">爱情系列之热情奔放</p>
+                        </div>
+                        <div class="product-info-right">
+                            <p>RMB</p>
+                            <div class="product-info-price" data-id="9012323">574</div>
+                        </div>
+                    </div>
+                    <div class="product-item-info__desc">饱满圆润的花头，紧促的拥抱在一起，红玫瑰与多头红玫瑰的组合，大大小小的花苞们，像极了轻盈的泡泡，花瓣就像裙裾一样层层叠叠，正是我向往中的那片花海，红玫表达的爱简单直接而炙热，除了爱你还是爱你。此花束适合送给热恋中人。</div>
+                </div>
+            </div>
+            <div class="product-list">
+
+            </div>
+        </div>
+    </div>
+    <div class="footer-nav">
+        <a href="#">首页</a> <b>|</b> <a href="#">关于我们</a>
+        <b>|</b>
+        <a href="#">媒体报道</a>
+        <b>|</b>
+        <a href="#">联系方式</a>
+        <b>|</b>
+        <a href="#">企业团购</a>
+        <b>|</b>
+        <a href="#">花店入驻</a>
+        <b>|</b>
+        <a href="#">友情链接</a>
+        <b>|</b>
+        <a href="#">在线补款</a>
+        <b>|</b>
+        <a class="last-child" href="#">为什么选择中国鲜花礼品网</a>
+    </div>
+    <footer>
+        <div class="auth">
+            <img src="img/footer-1.png" height="50" width="212">
+            <a href="#">
+                <img src="img/footer-2.jpg" height="49" width="150">
+            </a>
+            <a href="#">
+                <img src="img/footer-3.jpg" alt="ICP" height="46" width="35">
+            </a>
+            <a href="#">
+                <img src="img/footer-4.gif" title="深圳市市场监督管理局企业主体身份公示" alt="深圳市市场监督管理局企业主体身份公示" width="35" height="49" border="0" style="border-width:0px;border:hidden; border:none;">
+            </a>
+        </div>
+        <p>
+            <a href="#" title="中国花卉协会会员">中国花卉协会会员</a>
+            <a href="#">中国电子商务协会会员</a> ICP经营许可证：
+            <a>粤B2-20050744</a>
+            <b>|</b>
+            <a href="#">粤ICP备09171662号</a>
+            <span class="ico beian"></span> 粤公网安备44030502000373号 Copyright © 2005-2020
+        </p>
+        <p>
+            <a href="#">www.hua.com</a>
+            <span> 深圳市百易信息技术有限公司</span>
+        </p>
+    </footer>
+    <script src="./js/design.js"></script>
+</body>
+
+</html>
