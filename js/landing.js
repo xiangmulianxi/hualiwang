@@ -65,7 +65,7 @@ function phoneRegister() {
             }).then(function(res) {
                 console.log(res.data.status);
                 if (res.data.status == 200) {
-                    window.location.href = '#'
+                    window.location.href = '../index.html'
                 } else if (res.data.status == 404) {
                     alert('密码错误或者判断是否已注册')
                 }
@@ -106,7 +106,7 @@ function phoneRegister() {
             }).then(function(res) {
                 console.log(res.data.status);
                 if (res.data.status == 200) {
-                    window.location.href = '#'
+                    window.location.href = '../index.html'
                 } else if (res.data.status == 404) {
                     alert('密码错误或者判断是否已注册')
                 }

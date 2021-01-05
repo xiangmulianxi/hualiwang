@@ -71,6 +71,10 @@
     display: flex;
 }
 
+.top-nav-right li a {
+    color: #71797f;
+}
+
 .top-nav-right li:last-child {
     padding-right: 0;
 }
@@ -497,6 +501,10 @@
 
 .navi-nav li:hover {
     color: #FF734C;
+}
+
+.navi-nav li a {
+    color: #232628;
 }
 
 .mainCarousel {
