@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/group.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="top-nav">
+        <div class="top-nav1 wrap">
+            <ul class="top-nav-left">
+                <li><span><span class="icon icon-star"></span>收藏鲜花网(hua.com)</span>
+                </li>
+                <li><span><span class="icon icon-weixin"></span>关注微信</span>
+                </li>
+                <li><span><span class="icon icon-mobile"></span>花礼网app</span>
+                </li>
+            </ul>
+            <ul class="top-nav-right">
+                <li><span>你好，请登录 </span>&nbsp;&nbsp;<span> 注册</span></li>
+                <li><span>订单查询</span></li>
+                <li class="menu-dropdown"><span> 客户服务 </span>
+                    <span class="icon-arrow"></span>
+                    <div class="dropdown-box">
+                        <span>在线付款</span>
+                        <span>售后服务</span>
+                        <span>帮助中心</span>
+                        <span>配送范围</span>
+                        <span>留言反馈</span>
+                    </div>
+                </li>
+                <li><span> 购物车 </span><span class="text-primary" id="gwcCount">(0)</span></li>
+                <li class="slogan">
+                    <span>中国鲜花礼品网:中国鲜花网领先品牌</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <header>
+        <div class="logo">
+            <h1>
+                <a href="/" class="logo-bd">中国鲜花礼品网(花礼网)</a>
+            </h1>
+        </div>
+        <div class="search">
+            <form name="i_search" method="get">
+                <div class="input-group">
+                    <input name="keyword" type="text" class="control" placeholder="商品关键词">
+                    <span>
+                    <button class="btn" type="button">搜索</button>
+                </span>
+                </div>
+            </form>
+
+        </div>
+        <div class="service">
+            <span class="ico ico-phone"></span>400-889-8188
+            <a id="header-chat" href="javascript:void(0);"><span class="ico ico-headset"></span>在线客服</a>
+        </div>
+    </header>
+
+
+    <!-- 内容 -->
+    <div class="nav">
+        <div class="nav-group-pic">
+            <img src="./img/tg1.png" alt="">
+        </div>
+        <div class="nav-group-list">
+            <a href="#" class="nav-active">首页</a>
+            <a href="#">团购鲜花</a>
+            <a href="#">礼品卡</a>content
+            <a href="#">商业合作</a>
+        </div>
+    </div>
+    <div class="contents">
+        <div class="content contentactive">
+            <div class="swiper-container">
+                <div class="swiper-wrapper ">
+                    <div class="swiper-slide banner">
+                        <img src="./img/tg2.jpg" alt="">
+                        <div class="detail">查看详情</div>
+                    </div>
+                    <div class="swiper-slide banner">
+                        <img src="./img/tg3.jpg" alt="">
+                        <div class="detail">查看详情</div>
+                    </div>
+                    <div class="swiper-slide banner">
+                        <img src="./img/tg4.jpg" alt="">
+                        <div class="detail">查看详情</div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <!-- <div class="banner-next"></div>
+                <div class="banner-prev"></div> -->
+            </div>
+            <div class="quanyi">
+                <div class="title-box">
+                    <div class="title-left"></div>
+                    <div class="title-text">企业购权益</div>
+                    <div class="title-right"></div>
+                </div>
+                <div class="rights-box">
+                    <div class="right-box-item">
+                        <img src="./img/tg5.png" alt="">
+                        <h3>专属价格</h3>
+                        <p>全品类团购覆盖专享优惠价</p>
+                    </div>
+                    <div class="right-box-item">
+                        <img src="./img/tg5.png" alt="">
+                        <h3>快捷采购</h3>
+                        <p>全品类团购覆盖专享优惠价</p>
+                    </div>
+                    <div class="right-box-item">
+                        <img src="./img/tg5.png" alt="">
+                        <h3>便捷支付</h3>
+                        <p>全品类团购覆盖专享优惠价</p>
+                    </div>
+                    <div class="right-box-item">
+                        <img src="./img/tg5.png" alt="">
+                        <h3>开具发票</h3>
+                        <p>全品类团购覆盖专享优惠价</p>
+                    </div>
+                    <div class="right-box-item">
+                        <img src="./img/tg5.png" alt="">
+                        <h3>专属客服</h3>
+                        <p>全品类团购覆盖专享优惠价</p>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="title-box">
+                    <div class="title-left"></div>
+                    <div class="title-text">团购专享鲜花</div>
+                    <div class="title-right"></div>
+                </div>
+                <div class="product-list">
+                    <div class="product-item">
+                        <img src="./img/tg10.jpg" alt="">
+                        <div class="product-item-info">
+                            <div class="product-item-info-title">团购款-芳华</div>
+                            <div class="product-item-info-desc">粉百合1枝，卡罗拉玫瑰2枝</div>
+                            <div class="product-item-info-ft">
+                                <span class="product-item-info-price">￥114</span>
+                                <span class="product-item-info-limit">五术起订</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/tg10.jpg" alt="">
+                        <div class="product-item-info">
+                            <div class="product-item-info-title">团购款-芳华</div>
+                            <div class="product-item-info-desc">粉百合1枝，卡罗拉玫瑰2枝</div>
+                            <div class="product-item-info-ft">
+                                <span class="product-item-info-price">￥114</span>
+                                <span class="product-item-info-limit">五术起订</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/tg10.jpg" alt="">
+                        <div class="product-item-info">
+                            <div class="product-item-info-title">团购款-芳华</div>
+                            <div class="product-item-info-desc">粉百合1枝，卡罗拉玫瑰2枝</div>
+                            <div class="product-item-info-ft">
+                                <span class="product-item-info-price">￥91</span>
+                                <span class="product-item-info-limit">五术起订</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/tg10.jpg" alt="">
+                        <div class="product-item-info">
+                            <div class="product-item-info-title">团购款-芳华</div>
+                            <div class="product-item-info-desc">粉百合1枝，卡罗拉玫瑰2枝</div>
+                            <div class="product-item-info-ft">
+                                <span class="product-item-info-price">￥102</span>
+                                <span class="product-item-info-limit">五术起订</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/tg10.jpg" alt="">
+                        <div class="product-item-info">
+                            <div class="product-item-info-title">团购款-芳华</div>
+                            <div class="product-item-info-desc">粉百合1枝，卡罗拉玫瑰2枝</div>
+                            <div class="product-item-info-ft">
+                                <span class="product-item-info-price">￥538</span>
+                                <span class="product-item-info-limit">五术起订</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/tg10.jpg" alt="">
+                        <div class="product-item-info">
+                            <div class="product-item-info-title">团购款-芳华</div>
+                            <div class="product-item-info-desc">粉百合1枝，卡罗拉玫瑰2枝</div>
+                            <div class="product-item-info-ft">
+                                <span class="product-item-info-price">￥458</span>
+                                <span class="product-item-info-limit">五术起订</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="case_container">
+                <div class="title-box">
+                    <div class="title-left"></div>
+                    <div class="title-text">定制化解决方案</div>
+                    <div class="title-right"></div>
+                </div>
+                <div class="case_tav">
+                    <span class="case_tav_item case_tav_item_active">客户维护</span>
+                    <span class="case_tav_item">员工关怀</span>
+                    <span class="case_tav_item">促销活动</span>
+                </div>
+                <div class="case-fixed">
+                    <div class="case_body case-active">
+                        <div class="case_body_header">
+                            发展一位新客户的成本是挽留一个老客户的3~10倍，成功的企业深知留住老客户的重要。俗话说：开发十个新客户，不如维护好一个老客户。回头客带来的不止是销量，更是口碑。</div>
+                        <div class="case_body_info">
+                            <div class="case_body_scroll">
+                                <div class="case_body_scroll_item case_body_scroll_item_active">方太集团</div>
+                                <div class="case_body_scroll_item">方太集团</div>
+                                <div class="case_body_scroll_item">方太集团</div>
+                                <div class="case_body_scroll_item">方太集团</div>
+                                <div class="case_body_scroll_item">方太集团</div>
+                                <div class="case_body_scroll_item">方太集团</div>
+                            </div>
+
+                            <div class="case_body_pic">
+                                <img src="https://img02.hua.com/images/qiyetuangou/pt_fangtai.jpg" alt="">
+                            </div>
+                            <div class="case_body_center">
+                                <div class="case_body_center_logo">
+                                    <img src="https://img02.hua.com/images/qiyetuangou/FangTai.png" alt="">
+                                </div>
+                                <div class="case_body_center_requirement">
+                                    <h3>需求：</h3>
+                                    <p class="requirement">在指定日期送给合作的高校招生办老师。</p>
+                                </div>
+                                <div class="case_body_center_detail">
+                                    <h3>实施方案：</h3>
+                                    <p class="solution">
+                                        1、方太集团自选好鲜花款式并与花礼网确认<br /> 2、方太集团发送名单给花礼网，核实地址等信息，双方确定金额
+                                        <br /> 3、花礼网开出发票，方太集团收到后，将款项汇到指定账户
+                                        <br /> 4、花礼网按照需求将鲜花在指定日期送货上门。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case_body">
+                        <div class="case_body_header">
+                            发展一位新客户的成本是挽留一个老客户的3~10倍，成功的企业深知留住老客户的重要。俗话说：开发十个新客户，不如维护好一个老客户。回头客带来的不止是销量，更是口碑。</div>
+                        <div class="case_body_info">
+                            <div class="case_body_scroll">
+                                <div class="case_body_scroll_item case_body_scroll_item_active">方太集团</div>
+                                <div class="case_body_scroll_item">方太集团</div>
+                                <div class="case_body_scroll_item">方太集团</div>
+
+                            </div>
+                            <div class="case_body_pic">
+                                <img src="https://img02.hua.com/images/qiyetuangou/pt_nuohe.jpg" alt="">
+                            </div>
+                            <div class="case_body_center">
+                                <div class="case_body_center_logo">
+                                    <img src="https://img02.hua.com/images/qiyetuangou/FangTai.png" alt="">
+                                </div>
+                                <div class="case_body_center_requirement">
+                                    <h3>需求：</h3>
+                                    <p class="requirement">在指定日期送给合作的高校招生办老师。</p>
+                                </div>
+                                <div class="case_body_center_detail">
+                                    <h3>实施方案：</h3>
+                                    <p class="solution">
+                                        1、方太集团自选好鲜花款式并与花礼网确认<br /> 2、方太集团发送名单给花礼网，核实地址等信息，双方确定金额
+                                        <br /> 3、花礼网开出发票，方太集团收到后，将款项汇到指定账户
+                                        <br /> 4、花礼网按照需求将鲜花在指定日期送货上门。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case_body">
+                        <div class="case_body_header">
+                            发展一位新客户的成本是挽留一个老客户的3~10倍，成功的企业深知留住老客户的重要。俗话说：开发十个新客户，不如维护好一个老客户。回头客带来的不止是销量，更是口碑。</div>
+                        <div class="case_body_info">
+                            <div class="case_body_scroll">
+                                <div class="case_body_scroll_item case_body_scroll_item_active">方太集团</div>
+                                <div class="case_body_scroll_item">方太集团</div>
+                            </div>
+                            <div class="case_body_pic">
+                                <img src="https://img02.hua.com/images/qiyetuangou/pt_beiyinmei.jpg" alt="">
+                            </div>
+                            <div class="case_body_center">
+                                <div class="case_body_center_logo">
+                                    <img src="https://img02.hua.com/images/qiyetuangou/FangTai.png" alt="">
+                                </div>
+                                <div class="case_body_center_requirement">
+                                    <h3>需求：</h3>
+                                    <p class="requirement">在指定日期送给合作的高校招生办老师。</p>
+                                </div>
+                                <div class="case_body_center_detail">
+                                    <h3>实施方案：</h3>
+                                    <p class="solution">
+                                        1、方太集团自选好鲜花款式并与花礼网确认<br /> 2、方太集团发送名单给花礼网，核实地址等信息，双方确定金额
+                                        <br /> 3、花礼网开出发票，方太集团收到后，将款项汇到指定账户
+                                        <br /> 4、花礼网按照需求将鲜花在指定日期送货上门。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="advantage">
+                <div class="title-box">
+                    <div class="title-left"></div>
+                    <div class="title-text">服务优势</div>
+                    <div class="title-right"></div>
+                </div>
+                <div class="advantage_list">
+                    <div class="advantage_item">
+                        <div class="advantage_item_pic">
+                            <img src="https://img02.hua.com/images/qiyetuangou/advantage_1.png" alt="">
+                        </div>
+                        <div class="advantage_item_content">
+                            <div class="advantage_item_content_header">覆盖地域广</div>
+                            <div class="advantage_item_content_body">门店覆盖全国2000+城市<br />提供异地服务</div>
+                        </div>
+                    </div>
+                    <div class="advantage_item">
+                        <div class="advantage_item_pic">
+                            <img src="https://img02.hua.com/images/qiyetuangou/advantage_1.png" alt="">
+                        </div>
+                        <div class="advantage_item_content">
+                            <div class="advantage_item_content_header">覆盖地域广</div>
+                            <div class="advantage_item_content_body">门店覆盖全国2000+城市<br />提供异地服务</div>
+                        </div>
+                    </div>
+                    <div class="advantage_item">
+                        <div class="advantage_item_pic">
+                            <img src="https://img02.hua.com/images/qiyetuangou/advantage_1.png" alt="">
+                        </div>
+                        <div class="advantage_item_content">
+                            <div class="advantage_item_content_header">覆盖地域广</div>
+                            <div class="advantage_item_content_body">门店覆盖全国2000+城市<br />提供异地服务</div>
+                        </div>
+                    </div>
+                    <div class="advantage_item">
+                        <div class="advantage_item_pic">
+                            <img src="https://img02.hua.com/images/qiyetuangou/advantage_1.png" alt="">
+                        </div>
+                        <div class="advantage_item_content">
+                            <div class="advantage_item_content_header">覆盖地域广</div>
+                            <div class="advantage_item_content_body">门店覆盖全国2000+城市<br />提供异地服务</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="partners">
+                <div class="title-box">
+                    <div class="title-left"></div>
+                    <div class="title-text">定制化解决方案</div>
+                    <div class="title-right"></div>
+                </div>
+                <div class="partners-pic">
+                    <img src="./img/partners.png" alt="">
+                </div>
+            </div>
+            <div class="requests">
+                <div class="title-box">
+                    <div class="title-left"></div>
+                    <div class="title-text">联系我们</div>
+                    <div class="title-right"></div>
+                </div>
+                <div class="requests-box">
+                    <div class="form">
+                        <div class="form-item">
+                            <div class="form-item-label">
+                                公司名称
+                            </div>
+                            <input type="text" placeholder="请输入您的公司名称">
+                        </div>
+                        <div class="form-item">
+                            <div class="form-item-label">
+                                联系人
+                            </div>
+                            <input type="text" placeholder="请输入您的姓名">
+                        </div>
+                        <div class="form-item">
+                            <div class="form-item-label">
+                                联系方式
+                            </div>
+                            <input type="text" placeholder="请输入您的联系电话/qq/微信">
+                        </div>
+                        <div class="form-item">
+                            <div class="form-item-label">
+                                需求概述
+                            </div>
+                            <input type="text">
+                        </div>
+                        <div class="form-btn">
+                            <button>提交</button>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="info_item">
+                            <img src="https://img02.hua.com/images/pc_icon_user.png" alt="">
+                            <span>联系人：</span>
+                            <span>胡小姐</span>
+                        </div>
+                        <div class="info_item">
+                            <img src="https://img02.hua.com/images/pc_icon_phone.png" alt="">
+                            <span>电话：</span>
+                            <span>0755-26668820</span>
+                        </div>
+                        <div class="info_item">
+                            <img src="https://img02.hua.com/images/pc_icon_qq.png" alt="">
+                            <span>QQ：</span>
+                            <span>2355363606</span>
+                        </div>
+                        <div class="info_item">
+                            <img src="https://img02.hua.com/images/pc_icon_wx.png" alt="">
+                            <span>微信：</span>
+                            <span>hua_business</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <img src="./img/tg2.jpg" alt="">
+            <div class="quanyi">
+                <div class="title-box">
+                    <div class="title-left"></div>
+                    <div class="title-text">企业购权益</div>
+                    <div class="title-right"></div>
+                </div>
+                <div class="rights-box">
+                    <div class="right-box-item">
+                        <img src="./img/tg5.png" alt="">
+                        <h3>专属价格</h3>
+                        <p>全品类团购覆盖专享优惠价</p>
+                    </div>
+                    <div class="right-box-item">
+                        <img src="./img/tg5.png" alt="">
+                        <h3>专属价格</h3>
+                        <p>全品类团购覆盖专享优惠价</p>
+                    </div>
+                    <div class="right-box-item">
+                        <img src="./img/tg5.png" alt="">
+                        <h3>专属价格</h3>
+                        <p>全品类团购覆盖专享优惠价</p>
+                    </div>
+                    <div class="right-box-item">
+                        <img src="./img/tg5.png" alt="">
+                        <h3>专属价格</h3>
+                        <p>全品类团购覆盖专享优惠价</p>
+                    </div>
+                    <div class="right-box-item">
+                        <img src="./img/tg5.png" alt="">
+                        <h3>专属价格</h3>
+                        <p>全品类团购覆盖专享优惠价</p>
+                    </div>
+                </div>
+            </div>
+            <div class="advantage">
+                <div class="title-box">
+                    <div class="title-left"></div>
+                    <div class="title-text">服务优势</div>
+                    <div class="title-right"></div>
+                </div>
+                <div class="advantage_list">
+                    <div class="advantage_item">
+                        <div class="advantage_item_pic">
+                            <img src="https://img02.hua.com/images/qiyetuangou/advantage_1.png" alt="">
+                        </div>
+                        <div class="advantage_item_content">
+                            <div class="advantage_item_content_header">覆盖地域广</div>
+                            <div class="advantage_item_content_body">门店覆盖全国2000+城市<br />提供异地服务</div>
+                        </div>
+                    </div>
+                    <div class="advantage_item">
+                        <div class="advantage_item_pic">
+                            <img src="https://img02.hua.com/images/qiyetuangou/advantage_1.png" alt="">
+                        </div>
+                        <div class="advantage_item_content">
+                            <div class="advantage_item_content_header">覆盖地域广</div>
+                            <div class="advantage_item_content_body">门店覆盖全国2000+城市<br />提供异地服务</div>
+                        </div>
+                    </div>
+                    <div class="advantage_item">
+                        <div class="advantage_item_pic">
+                            <img src="https://img02.hua.com/images/qiyetuangou/advantage_1.png" alt="">
+                        </div>
+                        <div class="advantage_item_content">
+                            <div class="advantage_item_content_header">覆盖地域广</div>
+                            <div class="advantage_item_content_body">门店覆盖全国2000+城市<br />提供异地服务</div>
+                        </div>
+                    </div>
+                    <div class="advantage_item">
+                        <div class="advantage_item_pic">
+                            <img src="https://img02.hua.com/images/qiyetuangou/advantage_1.png" alt="">
+                        </div>
+                        <div class="advantage_item_content">
+                            <div class="advantage_item_content_header">覆盖地域广</div>
+                            <div class="advantage_item_content_body">门店覆盖全国2000+城市<br />提供异地服务</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <img src="./img/tg4.jpg" alt="">
+            <div class="quanyi">
+                <div class="title-box">
+                    <div class="title-left"></div>
+                    <div class="title-text">企业购权益</div>
+                    <div class="title-right"></div>
+                </div>
+                <div class="rights-box">
+                    <div class="right-box-item">
+                        <img src="./img/tg5.png" alt="">
+                        <h3>专属价格</h3>
+                        <p>全品类团购覆盖专享优惠价</p>
+                    </div>
+                    <div class="right-box-item">
+                        <img src="./img/tg5.png" alt="">
+                        <h3>专属价格</h3>
+                        <p>全品类团购覆盖专享优惠价</p>
+                    </div>
+                    <div class="right-box-item">
+                        <img src="./img/tg5.png" alt="">
+                        <h3>专属价格</h3>
+                        <p>全品类团购覆盖专享优惠价</p>
+                    </div>
+                    <div class="right-box-item">
+                        <img src="./img/tg5.png" alt="">
+                        <h3>专属价格</h3>
+                        <p>全品类团购覆盖专享优惠价</p>
+                    </div>
+                    <div class="right-box-item">
+                        <img src="./img/tg5.png" alt="">
+                        <h3>专属价格</h3>
+                        <p>全品类团购覆盖专享优惠价</p>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="title-box">
+                    <div class="title-left"></div>
+                    <div class="title-text">团购专享鲜花</div>
+                    <div class="title-right"></div>
+                </div>
+                <div class="product-list">
+                    <div class="product-item">
+                        <img src="./img/tg10.jpg" alt="">
+                        <div class="product-item-info">
+                            <div class="product-item-info-title">团购款-芳华</div>
+                            <div class="product-item-info-desc">粉百合1枝，卡罗拉玫瑰2枝</div>
+                            <div class="product-item-info-ft">
+                                <span class="product-item-info-price">￥114</span>
+                                <span class="product-item-info-limit">五术起订</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/tg10.jpg" alt="">
+                        <div class="product-item-info">
+                            <div class="product-item-info-title">团购款-芳华</div>
+                            <div class="product-item-info-desc">粉百合1枝，卡罗拉玫瑰2枝</div>
+                            <div class="product-item-info-ft">
+                                <span class="product-item-info-price">￥114</span>
+                                <span class="product-item-info-limit">五术起订</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/tg10.jpg" alt="">
+                        <div class="product-item-info">
+                            <div class="product-item-info-title">团购款-芳华</div>
+                            <div class="product-item-info-desc">粉百合1枝，卡罗拉玫瑰2枝</div>
+                            <div class="product-item-info-ft">
+                                <span class="product-item-info-price">￥114</span>
+                                <span class="product-item-info-limit">五术起订</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/tg10.jpg" alt="">
+                        <div class="product-item-info">
+                            <div class="product-item-info-title">团购款-芳华</div>
+                            <div class="product-item-info-desc">粉百合1枝，卡罗拉玫瑰2枝</div>
+                            <div class="product-item-info-ft">
+                                <span class="product-item-info-price">￥114</span>
+                                <span class="product-item-info-limit">五术起订</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/tg10.jpg" alt="">
+                        <div class="product-item-info">
+                            <div class="product-item-info-title">团购款-芳华</div>
+                            <div class="product-item-info-desc">粉百合1枝，卡罗拉玫瑰2枝</div>
+                            <div class="product-item-info-ft">
+                                <span class="product-item-info-price">￥114</span>
+                                <span class="product-item-info-limit">五术起订</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/tg10.jpg" alt="">
+                        <div class="product-item-info">
+                            <div class="product-item-info-title">团购款-芳华</div>
+                            <div class="product-item-info-desc">粉百合1枝，卡罗拉玫瑰2枝</div>
+                            <div class="product-item-info-ft">
+                                <span class="product-item-info-price">￥114</span>
+                                <span class="product-item-info-limit">五术起订</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <img src="./img/tg3.jpg" alt="">
+            <div class="product">
+                <div class="title-box">
+                    <div class="title-left"></div>
+                    <div class="title-text">团购专享鲜花</div>
+                    <div class="title-right"></div>
+                </div>
+                <div class="product-list">
+                    <div class="product-item">
+                        <img src="./img/tg10.jpg" alt="">
+                        <div class="product-item-info">
+                            <div class="product-item-info-title">团购款-芳华</div>
+                            <div class="product-item-info-desc">粉百合1枝，卡罗拉玫瑰2枝</div>
+                            <div class="product-item-info-ft">
+                                <span class="product-item-info-price">￥114</span>
+                                <span class="product-item-info-limit">五术起订</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/tg10.jpg" alt="">
+                        <div class="product-item-info">
+                            <div class="product-item-info-title">团购款-芳华</div>
+                            <div class="product-item-info-desc">粉百合1枝，卡罗拉玫瑰2枝</div>
+                            <div class="product-item-info-ft">
+                                <span class="product-item-info-price">￥114</span>
+                                <span class="product-item-info-limit">五术起订</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/tg10.jpg" alt="">
+                        <div class="product-item-info">
+                            <div class="product-item-info-title">团购款-芳华</div>
+                            <div class="product-item-info-desc">粉百合1枝，卡罗拉玫瑰2枝</div>
+                            <div class="product-item-info-ft">
+                                <span class="product-item-info-price">￥114</span>
+                                <span class="product-item-info-limit">五术起订</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/tg10.jpg" alt="">
+                        <div class="product-item-info">
+                            <div class="product-item-info-title">团购款-芳华</div>
+                            <div class="product-item-info-desc">粉百合1枝，卡罗拉玫瑰2枝</div>
+                            <div class="product-item-info-ft">
+                                <span class="product-item-info-price">￥114</span>
+                                <span class="product-item-info-limit">五术起订</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/tg10.jpg" alt="">
+                        <div class="product-item-info">
+                            <div class="product-item-info-title">团购款-芳华</div>
+                            <div class="product-item-info-desc">粉百合1枝，卡罗拉玫瑰2枝</div>
+                            <div class="product-item-info-ft">
+                                <span class="product-item-info-price">￥114</span>
+                                <span class="product-item-info-limit">五术起订</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/tg10.jpg" alt="">
+                        <div class="product-item-info">
+                            <div class="product-item-info-title">团购款-芳华</div>
+                            <div class="product-item-info-desc">粉百合1枝，卡罗拉玫瑰2枝</div>
+                            <div class="product-item-info-ft">
+                                <span class="product-item-info-price">￥114</span>
+                                <span class="product-item-info-limit">五术起订</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="case_container">
+                <div class="title-box">
+                    <div class="title-left"></div>
+                    <div class="title-text">定制化解决方案</div>
+                    <div class="title-right"></div>
+                </div>
+                <div class="case_tav">
+                    <span class="case_tav_item case_tav_item_active">客户维护</span>
+                    <span class="case_tav_item">员工关怀</span>
+                    <span class="case_tav_item">促销活动</span>
+                </div>
+                <div class="case-fixed">
+                    <div class="case_body case-active">
+                        <div class="case_body_header">
+                            发展一位新客户的成本是挽留一个老客户的3~10倍，成功的企业深知留住老客户的重要。俗话说：开发十个新客户，不如维护好一个老客户。回头客带来的不止是销量，更是口碑。</div>
+                        <div class="case_body_info">
+                            <div class="case_body_scroll">
+                                <div class="case_body_scroll_item case_body_scroll_item_active">方太集团</div>
+                                <div class="case_body_scroll_item">方太集团</div>
+                                <div class="case_body_scroll_item">方太集团</div>
+                                <div class="case_body_scroll_item">方太集团</div>
+                                <div class="case_body_scroll_item">方太集团</div>
+                                <div class="case_body_scroll_item">方太集团</div>
+                            </div>
+
+                            <div class="case_body_pic">
+                                <img src="https://img02.hua.com/images/qiyetuangou/pt_fangtai.jpg" alt="">
+                            </div>
+                            <div class="case_body_center">
+                                <div class="case_body_center_logo">
+                                    <img src="https://img02.hua.com/images/qiyetuangou/FangTai.png" alt="">
+                                </div>
+                                <div class="case_body_center_requirement">
+                                    <h3>需求：</h3>
+                                    <p class="requirement">在指定日期送给合作的高校招生办老师。</p>
+                                </div>
+                                <div class="case_body_center_detail">
+                                    <h3>实施方案：</h3>
+                                    <p class="solution">
+                                        1、方太集团自选好鲜花款式并与花礼网确认<br /> 2、方太集团发送名单给花礼网，核实地址等信息，双方确定金额
+                                        <br /> 3、花礼网开出发票，方太集团收到后，将款项汇到指定账户
+                                        <br /> 4、花礼网按照需求将鲜花在指定日期送货上门。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case_body">
+                        <div class="case_body_header">
+                            发展一位新客户的成本是挽留一个老客户的3~10倍，成功的企业深知留住老客户的重要。俗话说：开发十个新客户，不如维护好一个老客户。回头客带来的不止是销量，更是口碑。</div>
+                        <div class="case_body_info">
+                            <div class="case_body_scroll">
+                                <div class="case_body_scroll_item case_body_scroll_item_active">方太集团</div>
+                                <div class="case_body_scroll_item">方太集团</div>
+                                <div class="case_body_scroll_item">方太集团</div>
+
+                            </div>
+                            <div class="case_body_pic">
+                                <img src="https://img02.hua.com/images/qiyetuangou/pt_nuohe.jpg" alt="">
+                            </div>
+                            <div class="case_body_center">
+                                <div class="case_body_center_logo">
+                                    <img src="https://img02.hua.com/images/qiyetuangou/FangTai.png" alt="">
+                                </div>
+                                <div class="case_body_center_requirement">
+                                    <h3>需求：</h3>
+                                    <p class="requirement">在指定日期送给合作的高校招生办老师。</p>
+                                </div>
+                                <div class="case_body_center_detail">
+                                    <h3>实施方案：</h3>
+                                    <p class="solution">
+                                        1、方太集团自选好鲜花款式并与花礼网确认<br /> 2、方太集团发送名单给花礼网，核实地址等信息，双方确定金额
+                                        <br /> 3、花礼网开出发票，方太集团收到后，将款项汇到指定账户
+                                        <br /> 4、花礼网按照需求将鲜花在指定日期送货上门。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case_body">
+                        <div class="case_body_header">
+                            发展一位新客户的成本是挽留一个老客户的3~10倍，成功的企业深知留住老客户的重要。俗话说：开发十个新客户，不如维护好一个老客户。回头客带来的不止是销量，更是口碑。</div>
+                        <div class="case_body_info">
+                            <div class="case_body_scroll">
+                                <div class="case_body_scroll_item case_body_scroll_item_active">方太集团</div>
+                                <div class="case_body_scroll_item">方太集团</div>
+                            </div>
+                            <div class="case_body_pic">
+                                <img src="https://img02.hua.com/images/qiyetuangou/pt_beiyinmei.jpg" alt="">
+                            </div>
+                            <div class="case_body_center">
+                                <div class="case_body_center_logo">
+                                    <img src="https://img02.hua.com/images/qiyetuangou/FangTai.png" alt="">
+                                </div>
+                                <div class="case_body_center_requirement">
+                                    <h3>需求：</h3>
+                                    <p class="requirement">在指定日期送给合作的高校招生办老师。</p>
+                                </div>
+                                <div class="case_body_center_detail">
+                                    <h3>实施方案：</h3>
+                                    <p class="solution">
+                                        1、方太集团自选好鲜花款式并与花礼网确认<br /> 2、方太集团发送名单给花礼网，核实地址等信息，双方确定金额
+                                        <br /> 3、花礼网开出发票，方太集团收到后，将款项汇到指定账户
+                                        <br /> 4、花礼网按照需求将鲜花在指定日期送货上门。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="advantage">
+                <div class="title-box">
+                    <div class="title-left"></div>
+                    <div class="title-text">服务优势</div>
+                    <div class="title-right"></div>
+                </div>
+                <div class="advantage_list">
+                    <div class="advantage_item">
+                        <div class="advantage_item_pic">
+                            <img src="https://img02.hua.com/images/qiyetuangou/advantage_1.png" alt="">
+                        </div>
+                        <div class="advantage_item_content">
+                            <div class="advantage_item_content_header">覆盖地域广</div>
+                            <div class="advantage_item_content_body">门店覆盖全国2000+城市<br />提供异地服务</div>
+                        </div>
+                    </div>
+                    <div class="advantage_item">
+                        <div class="advantage_item_pic">
+                            <img src="https://img02.hua.com/images/qiyetuangou/advantage_1.png" alt="">
+                        </div>
+                        <div class="advantage_item_content">
+                            <div class="advantage_item_content_header">覆盖地域广</div>
+                            <div class="advantage_item_content_body">门店覆盖全国2000+城市<br />提供异地服务</div>
+                        </div>
+                    </div>
+                    <div class="advantage_item">
+                        <div class="advantage_item_pic">
+                            <img src="https://img02.hua.com/images/qiyetuangou/advantage_1.png" alt="">
+                        </div>
+                        <div class="advantage_item_content">
+                            <div class="advantage_item_content_header">覆盖地域广</div>
+                            <div class="advantage_item_content_body">门店覆盖全国2000+城市<br />提供异地服务</div>
+                        </div>
+                    </div>
+                    <div class="advantage_item">
+                        <div class="advantage_item_pic">
+                            <img src="https://img02.hua.com/images/qiyetuangou/advantage_1.png" alt="">
+                        </div>
+                        <div class="advantage_item_content">
+                            <div class="advantage_item_content_header">覆盖地域广</div>
+                            <div class="advantage_item_content_body">门店覆盖全国2000+城市<br />提供异地服务</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="foot-wrap">
+
+
+        <div class="footer-nav">
+            <a href="#">首页</a> <b>|</b> <a href="#">关于我们</a>
+            <b>|</b>
+            <a href="#">媒体报道</a>
+            <b>|</b>
+            <a href="#">联系方式</a>
+            <b>|</b>
+            <a href="#">企业团购</a>
+            <b>|</b>
+            <a href="#">花店入驻</a>
+            <b>|</b>
+            <a href="#">友情链接</a>
+            <b>|</b>
+            <a href="#">在线补款</a>
+            <b>|</b>
+            <a class="last-child" href="#">为什么选择中国鲜花礼品网</a>
+        </div>
+        <footer>
+            <div class="auth">
+                <img src="img/footer-1.png" height="50" width="212">
+                <a href="#">
+                    <img src="img/footer-2.jpg" height="49" width="150">
+                </a>
+                <a href="#">
+                    <img src="img/footer-3.jpg" alt="ICP" height="46" width="35">
+                </a>
+                <a href="#">
+                    <img src="img/footer-4.gif" title="深圳市市场监督管理局企业主体身份公示" alt="深圳市市场监督管理局企业主体身份公示" width="35" height="49" border="0" style="border-width:0px;border:hidden; border:none;">
+                </a>
+            </div>
+            <p>
+                <a href="#" title="中国花卉协会会员">中国花卉协会会员</a>
+                <a href="#">中国电子商务协会会员</a> ICP经营许可证：
+                <a>粤B2-20050744</a>
+                <b>|</b>
+                <a href="#">粤ICP备09171662号</a>
+                <span class="ico beian"></span> 粤公网安备44030502000373号 Copyright © 2005-2020
+            </p>
+            <p>
+                <a href="#">www.hua.com</a>
+                <span> 深圳市百易信息技术有限公司</span>
+            </p>
+        </footer>
+    </div>
+
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/group.js"></script>
+
+</body>
+
+</html>
