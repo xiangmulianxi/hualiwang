@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/pgy-css/reset.css">
     <link rel="stylesheet" href="./css/pgy-css/gift.css">
     <link rel="stylesheet" href="https://www.layuicdn.com/layui-v2.5.5/css/layui.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
@@ -30,20 +31,40 @@
                             <li><a href="javascript:;">订单查询</a></li>
                             <li><a href="javascript:;">我的花礼</a></li>
                             <li><a href="javascript:;">客户服务</a></li>
+                            <li class="buy-car"><a href="javascript:;">购物车</a></li>
                             <li>特色礼品-生日礼物</li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="search wrap">
-                <h1>花礼网</h1>
+                <div class="title1">
+                    <h1>花礼网</h1>
+                </div>
                 <div class="ipt">
-                    <input type="text" placeholder='商品关键词'>
+                    <input type="text" color="#999" placeholder='商品关键词'>
                     <span>搜索</span>
                 </div>
                 <div>
                     <span>400-889-8188</span>
+                    <span class="top001">|</span>
                     <a href="javascript:;">在线客服</a>
+                </div>
+            </div>
+            <div class="top-nav">
+                <div class="wrap">
+                    <ul>
+                        <li><a href="javascript:;">全部商品导购</a></li>
+                        <li><a href="javascript:;">首页</a></li>
+                        <li><a href="javascript:;">鲜花</a></li>
+                        <li><a href="javascript:;">永生花</a></li>
+                        <li><a href="javascript:;">蛋糕</a></li>
+                        <li><a href="javascript:;">礼品</a></li>
+                        <li><a href="javascript:;">巧克力</a></li>
+                        <li><a href="javascript:;">花语大全</a></li>
+                        <li><a href="javascript:;">设计师臻选鲜花</a></li>
+                        <li><a href="javascript:;">元旦节鲜花礼物</a></li>
+                    </ul>
                 </div>
             </div>
         </header>
@@ -194,7 +215,7 @@
        </div>
     </div>
     <script src="./index.js"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+   
     <script src="./js/pgy-js/gift.js"></script>
     <script src="./js/pgy-js/swiper.min.js"></script>
     <script src="https://cdn.bootcdn.net/ajax/libs/layui/2.5.7/layui.all.js"></script>
@@ -315,6 +336,7 @@
         function jump(i) {
             localStorage.setItem("jump-id", i)
             window.location.href = 'detail.html'
+            // window.open = 'detail.html'
         }
 
 

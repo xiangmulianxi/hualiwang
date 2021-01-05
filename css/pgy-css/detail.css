@@ -1,5 +1,5 @@
 header{
-
+    background-color: #F3F5F7;
 }
 .wrap{
     width: 1200px;
@@ -8,19 +8,70 @@ header{
 .header-top{
     height: 40px;
     line-height: 40px;
+    color: #71797F;
+   
 }
 .header-top-left{
     float: left;
     height: 40px;
 }
-.header-top-left span:first-child{
+.header-top-left li:first-child{
      margin-right: 10px;
 }
-.header-top-left span{
+.header-top-left ul{
+    height: 40px;
+}
+.header-top-left li{
+    float: left;
     margin: 0 10px;
+    text-align: center;
+    height: 40px;
+    /* line-height: 40px; */
+}
+.header-top li:hover a{
+    color: #FF734C;
+}
+
+/* 加微信图片  */
+.wechat,.flower{
+    position: relative;
+    z-index: 10;
+}
+.wechat:hover,.flower:hover{
+    background-color: white;
+}
+.img1,.img2{
+    position: absolute;
+    background-color: white;
+    top: 40px;
+    left: -1px;
+    width: 160px;
+    height: 200px;
+    text-align: center;
+    font-size: 12px;
+    box-sizing: border-box;
+    border: 1px solid #E9ECF0;
+    border-top-color: transparent;
+    display: none;
+}
+.wechat:hover .img1{
+    display: block;
+}
+.flower:hover .img2{
+    display: block;
+}
+.img1 img,.img2 img{
+    display: block;
+    margin: 20px 0 0 15px;
+    width: 128px;
+    height: 128px;
+}
+.img1 p{
+    margin-top: -24px;
 }
 .header-top-left a{
     color: #666;
+    font-size: 12px;
 }
 .header-top-right{
     float: right;
@@ -35,4 +86,263 @@ header{
 }
 .header-top-right a{
     color: #666;
+    font-size: 12px;
+}
+/* 结束 */
+/* logo */
+.logo-out{
+    background-color: #F7F9FA;
+}
+.logo{
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-img {
+    background-image: url(../../img/pgyimg/sprite.png);
+    background-repeat: no-repeat;
+    background-position: 0px -240px;
+    width: 240px;
+    height: 70px;
+    margin-top: -10px;
+}
+.search{
+  width: 440px;
+  height: 45px;
+  border-radius: 24px;
+  border: 2px solid #FF734C;
+}
+.search div,.search input,.search span{
+    float: left;
+}
+.search div{
+    width: 50px;
+    height: 40px;
+    background-image: url(../../img/pgyimg/sprite.png);
+    background-repeat: no-repeat;
+    background-position: 18px -36px;
+    margin: 5px 0 0 5px;
+}
+.search input{
+    outline: none;
+    border: none;
+    font-size: 14px;
+    width: 260px;
+    height: 45px;
+}
+/* 修改input中默认字的颜色 */
+input::-webkit-input-placeholder{
+    color: #999;
+}
+.search span{
+    width: 125px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 24px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #FF734C;
+    text-align: center;
+}
+.search a{
+    color: white;
+}
+.phone{
+    width: 350px;
+    height: 60px;
+    line-height: 60px;
+    color: #71797F;
+    font-size: 14px;
+}
+.phone div{
+    float: left;
+    margin: 0 20px;
+}
+.phone a{
+    color: #71797F;
+    font-size: 14px;
+}
+.phone a:hover{
+    color:  #FF734C;
+}
+.phone1{
+    background-image: url(../../img/pgyimg/sprite.png);
+    background-repeat: no-repeat;
+    background-position: 0px -100px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 0px 8px -5px 0;
+}
+.phone2{
+    background-image: url(../../img/pgyimg/sprite.png);
+    background-repeat: no-repeat;
+    background-position: -35px -100px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 0px 8px -5px 0;
+}
+/* 下边导航 */
+nav{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #F7F9FA;
+}
+nav .title,nav ul{
+    float: left;
+}
+nav div{
+    width: 240px;
+    border-radius: 12px 12px 0 0;
+    background-color: #FF734C;
+    color: white;
+    text-align: center;
+}
+nav h2{
+    float: left;
+}
+nav span{
+    float: left;
+    background-image: url(../../img/pgyimg/sprite.png);
+    background-repeat: no-repeat;
+    background-position: -68px -102px;
+    width: 24px;
+    height: 24px;
+    margin: 10px 8px 0px 45px;
+}
+nav ul{
+    height: 50px;
+}
+nav li{
+    float: left;
+    margin: 0 14px;
+}
+nav li a{
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+}
+nav li:last-child a{
+    color: #FF734C;
+}
+nav li:hover a{
+    color: #FF734C;
+}
+/* 头部结束 */
+/* 内容 */
+.content{
+    margin-top: 30px;
+}
+#render{
+    border: 1px solid #E9ECF0;
+    border-radius: 8px;
+    height: 400px;
+    width: 360px;
+    position: relative;
+    float: left;
+}
+.content-right{
+    float: right;
+    margin-left: 30px;
+    width: 660px;
+    height: 530px;
+}
+/* #cont{
+   
+} */
+#cont h2{
+    font-size: 24px;
+    font-weight: bold;
+    width: 580px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#cont p{
+    color: #FF734C;
+    margin: 10px 0;
+}
+#cont div{
+    background-color: #FF5147;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 8px 8px 0px 0px;
+}
+#cont div span{
+    color: white;
+    font-size: 14px;
+}
+#cont div span:nth-child(1){
+    margin-right: 30px;
+
+}
+#cont div span:nth-child(2){
+       font-size: 24px;
+       font-weight: bold;
+       margin-right: 30px;
+}
+#cont div span:nth-child(3){
+       margin:  0 10px; 
+}
+
+.box{
+    padding: 12px 0;
+    background: #F7F9FA;
+    border-radius: 0px 0px 8px 8px;
+}
+.box div,.explain{
+    font-size: 14px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.box span,.explain span{
+    color: #71797F;
+    margin-right: 40px;
+}
+.explain span{
+    margin-right: 15px;
+}
+.box div span,.box div p,.explain span,.explain p{
+    float: left;
+}
+.buy-now{
+    margin: 100px 0;
+}
+.buy-now :nth-child(1) {
+    color: #FF734C;
+    line-height: 54px;
+    border: 1px solid rgba(255, 115, 76, 0.2);
+    background: #FFF0EC;
+    display: inline-block;
+    width: 208px;
+    height: 56px;
+    margin-right: 40px;
+    border-radius: 28px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+.buy-now :nth-child(2){
+    color: #fff;
+    line-height: 56px;
+    background: linear-gradient(90deg, #ff734c 0%, #ff3d12 100%);
+    display: inline-block;
+    width: 208px;
+    height: 56px;
+    margin-right: 40px;
+    border-radius: 28px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+.buy-now :nth-child(3){
+    font-size: 14px;
+    color: #666;
+}
+.buy-now :nth-child(3):hover{
+    color: #ff734c;
 }

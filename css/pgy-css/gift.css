@@ -51,12 +51,126 @@ html,
     .header-top-right a{
         color: #666;
     }
-    header .search{
-       margin: 40px auto;    
+    .buy-car{
+        position: relative;
     }
-    input {
+    .buy-car a{
+        display: block;
+        position: relative;
+        z-index: 10;
+        box-sizing: border-box;
+    }
+    .buy-car :hover {
+        background-color: white;
+        border: 1px solid #666;
+        border-bottom: none;
+        box-sizing: border-box;
+    }
+    .buy-car:hover::after{
+        display: block;
+    }
+    .buy-car::after{
+        content: "购物车空空如也";
+        position: absolute;
+        z-index: 1;
+        top: 40px;
+        right: 0;
+        border: 1px solid #666; 
+        background-color: white;
+        width: 320px;
+        height: 120px;
+        text-align: center; 
+        line-height: 120px;
+        display: none;
+    }
+    header .search{
+       margin-top: 10px;
+       margin-bottom: 20px; 
+       height: 100px;
+    }
+    .title1{
+        position: relative;
+        float: left;
+        width: 500px;
+        height: 64px;
+        margin-top: 20px;
+        background: url(../../img/pgyimg/back1.png) left center no-repeat;
+        z-index: 10;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    .title1 h1{
+        position: absolute;
+        display: inline-block;
+        text-indent: -9999em;
+        margin-top: -20px;
+    }
+    .ipt{
+        float: left;
+        width: 320px;
+        height: 35px;
+        margin-top: 40px;
+        overflow: hidden;
+    }
+    .ipt input{
+        width: 260px;
+        height: 35px;
+        padding: 6px;
+        box-sizing: border-box;
         outline: none;
         border: 1px solid #FF6A00;
+        float: left;
+    }
+    .ipt span{
+        display: block;
+        height: 35px;
+        width: 60px;
+        background-color: #FF6A00;
+        color: white;
+        float: left;
+        text-align: center;
+        line-height: 35px;
+    }
+    .search>div:nth-child(3){
+        float: right;
+        margin-top: 40px;
+        width: 250px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 14px;
+    }
+    .top001 {
+        font-size: 14px;
+        margin: 0 20px;
+        color: #999;
+    }
+    .top-nav{
+        height: 40px;
+        line-height: 40px;
+        background-color: #FE7A24;
+    }
+    .top-nav ul{
+        height: 40px;
+    }
+    .top-nav li{
+        float: left;
+    }
+    .top-nav li:hover{
+        background-color: #ff8833;
+    }
+    .top-nav li a{
+        padding: 10px 25px;
+        text-align: center;
+        font-size: 15px;
+        color: white;
+        font-weight: bold;
+    }
+    .top-nav li:first-child{
+        width: 140px;
+        background-color: #FF6A00;
+    }
+    .top-nav li:first-child a{
+        padding-left: 10px;   
     }
     /* 轮播 */
     .swiper-container {
