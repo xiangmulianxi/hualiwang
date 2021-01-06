@@ -1,17 +1,12 @@
-.top-banner {
-    /* background: url(../img/banner-top.png) 50% 0px no-repeat; */
-    height: 80px;
-}
-
 .icon {
     display: inline-block;
-    background-image: url(../img/common.png);
+    background-image: url(../img/common_sprite.png);
     background-repeat: no-repeat;
     vertical-align: top;
 }
 
 .top-nav {
-    width: 1200px;
+    min-width: 1200px;
     height: 40px;
     font-size: 12px;
     color: #71797f;
@@ -51,7 +46,7 @@
     margin-top: 12px;
     margin-right: 4px;
     display: inline-block;
-    background-image: url(../img/common.png);
+    background-image: url(../img/common_sprite.png);
     background-repeat: no-repeat;
     vertical-align: top;
 }
@@ -72,6 +67,10 @@
     width: 618px;
     height: 40px;
     display: flex;
+}
+
+.top-nav-right li a {
+    color: #71797f;
 }
 
 .top-nav-right li:last-child {
