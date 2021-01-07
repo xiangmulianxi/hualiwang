@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="./css/pgy-css/reset.css">
     <link rel="stylesheet" href="./css/pgy-css/gift.css">
     <link rel="stylesheet" href="https://www.layuicdn.com/layui-v2.5.5/css/layui.css">
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
@@ -31,7 +30,10 @@
                             <li><a href="javascript:;">订单查询</a></li>
                             <li><a href="javascript:;">我的花礼</a></li>
                             <li><a href="javascript:;">客户服务</a></li>
-                            <li class="buy-car"><a href="javascript:;">购物车</a></li>
+                            <li class="buy-car">
+                                <a href="javascript:;">购物车</a>
+                                <div class="pos"></div>
+                            </li>
                             <li>特色礼品-生日礼物</li>
                         </ul>
                     </div>
@@ -218,6 +220,7 @@
    
     <script src="./js/pgy-js/gift.js"></script>
     <script src="./js/pgy-js/swiper.min.js"></script>
+    <script src="./js/pgy-js/axios.min.js"></script>
     <script src="https://cdn.bootcdn.net/ajax/libs/layui/2.5.7/layui.all.js"></script>
     <script>
         var lists = document.getElementById('lists');

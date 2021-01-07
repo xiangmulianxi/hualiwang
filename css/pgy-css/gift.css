@@ -51,30 +51,32 @@ html,
     .header-top-right a{
         color: #666;
     }
+    /* 定位覆盖上边框问题 */
     .buy-car{
         position: relative;
+        z-index: 10;
+        border: 1px solid transparent;
+        text-align: center;
     }
     .buy-car a{
         display: block;
-        position: relative;
-        z-index: 10;
-        box-sizing: border-box;
+        width: 38px;
+        height: 39px;
     }
-    .buy-car :hover {
+    .buy-car:hover a{
         background-color: white;
         border: 1px solid #666;
+        border-top: none;
         border-bottom: none;
-        box-sizing: border-box;
     }
-    .buy-car:hover::after{
+    .buy-car:hover .pos{
         display: block;
     }
-    .buy-car::after{
-        content: "购物车空空如也";
+    .buy-car .pos{
         position: absolute;
-        z-index: 1;
-        top: 40px;
-        right: 0;
+        z-index: -1;
+        top: 38px;
+        right: 0px;
         border: 1px solid #666; 
         background-color: white;
         width: 320px;
@@ -120,6 +122,10 @@ html,
         outline: none;
         border: 1px solid #FF6A00;
         float: left;
+    }
+    .ipt input:focus{
+        border: 1px solid #FF6A00; 
+        border-radius: 0;
     }
     .ipt span{
         display: block;

@@ -79,4 +79,37 @@ app.get('/jump', (req, res) => {
   })
 }
 )
+//cake蛋糕接口 字母
+app.get('/letter', (req, res) => {
+  connection.query(`select * from letters`, function (err, rows, fields) {
+    res.send({
+      status:200,
+      data:rows
+    })
+  })
+}
+)
+//cake蛋糕接口 城市
+app.get('/city', (req, res) => {
+  var i = req.query.id
+  // var light = req.query.light
+
+  connection.query(`select * from area where type_id=${i}`, function (err, rows, fields) {
+    res.send({
+      status:200,
+      data:rows
+    })
+  })
+}
+)
+//cake蛋糕接口 蛋糕内容
+app.get('/cake2', (req, res) => {
+  connection.query(`select * from cake2`, function (err, rows, fields) {
+    res.send({
+      status:200,
+      data:rows
+    })
+  })
+}
+)
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
