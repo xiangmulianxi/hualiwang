@@ -8,7 +8,7 @@ var connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: 'root',
-    database: 'flower'
+    database: 'huali'
 });
 // 连接数据库
 connection.connect()
@@ -72,6 +72,55 @@ app.get('/design2', (req, res) => {
             status: 200,
             data: rows // rows对应的是数据库查询返回的数据
         })
+    })
+});
+// index
+// 获取列表
+app.get('/', (req, res) => {
+    connection.query('SELECT * from shouye where type_id=1', function(err, rows, fields) {
+        res.send(rows)
+    })
+})
+app.get('/1', (req, res) => {
+    connection.query('SELECT * from shouye where type_id=2', function(err, rows, fields) {
+        res.send(rows)
+    })
+})
+app.get('/2', (req, res) => {
+    connection.query('SELECT * from shouye where type_id=3', function(err, rows, fields) {
+        res.send(rows)
+    })
+})
+app.get('/3', (req, res) => {
+    connection.query('SELECT * from shouye where type_id=4', function(err, rows, fields) {
+        res.send(rows)
+    })
+})
+app.get('/4', (req, res) => {
+    connection.query('SELECT * from shouye where type_id=5', function(err, rows, fields) {
+        res.send(rows)
+    })
+});
+// huang
+app.get('/ji', (req, res) => {
+    connection.query('SELECT * from nav', function(err, rows, fields) {
+        if (err) throw err
+
+        res.send(rows)
+    })
+})
+app.get('/hua', (req, res) => {
+    connection.query('SELECT * from  list limit 0,28', function(err, rows, fields) {
+        if (err) throw err
+
+        res.send(rows)
+    })
+})
+app.get('/yong', (req, res) => {
+    connection.query('SELECT * from immortal', function(err, rows, fields) {
+        if (err) throw err
+
+        res.send(rows)
     })
 })
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
