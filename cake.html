@@ -7,6 +7,7 @@
     <title>蛋糕</title>
     <link rel="stylesheet" href="./css/pgy-css/bootStarp.css">
     <link rel="stylesheet" href="./css/pgy-css/swiper.min.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/pgy-css/reset.css">
     <link rel="stylesheet" href="./css/pgy-css/cake.css">
     <link rel="stylesheet" href="https://www.layuicdn.com/layui-v2.5.5/css/layui.css">
@@ -54,15 +55,47 @@
                 <div class="wrap">
                     <ul>
                         <li><a href="javascript:;">全部商品导购</a></li>
-                        <li><a href="javascript:;">首页</a></li>
-                        <li><a href="javascript:;">鲜花</a></li>
-                        <li><a href="javascript:;">永生花</a></li>
-                        <li><a href="javascript:;">蛋糕</a></li>
-                        <li><a href="javascript:;">礼品</a></li>
-                        <li><a href="javascript:;">巧克力</a></li>
-                        <li><a href="javascript:;">花语大全</a></li>
-                        <li><a href="javascript:;">设计师臻选鲜花</a></li>
-                        <li><a href="javascript:;">元旦节鲜花礼物</a></li>
+                        <li><a href="./index.html">首页</a></li>
+                        <li>
+                            <a href="./flower.html">
+                                鲜花
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./immortal.html">
+                                永生花
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./cake.html">
+                                蛋糕
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./gift.html">
+                                礼品
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                巧克力
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                花语大全
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./group.html">
+                                企业团购
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./design.html">
+                                设计师臻选鲜花
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -170,7 +203,7 @@
         </div>
         <!-- 内容 蛋糕 -->
         <div class="cake-content" id="cake-content">
-            
+
         </div>
         <!-- 数据渲染 结束 -->
         <!-- 底部 -->
@@ -260,14 +293,14 @@
             var tabList = document.querySelectorAll('#letter li a')
             tabList[0].classList.add('letter-light')
             tabList.forEach(item => {
-                item.onclick = function () {
-                    for (var i = 0; i < tabList.length; i++) {
-                        tabList[i].classList.remove('letter-light')
+                    item.onclick = function() {
+                        for (var i = 0; i < tabList.length; i++) {
+                            tabList[i].classList.remove('letter-light')
+                        }
+                        this.classList.add('letter-light')
                     }
-                    this.classList.add('letter-light')
-                }
-            })
-            //高亮结束
+                })
+                //高亮结束
         }).catch(err => {
             console.log(err);
         })
@@ -310,10 +343,6 @@
         getCity(2, city2, 2)
         getCity(3, city3, 3)
         getCity(4, city4, 4)
-
-
-
-
     </script>
 </body>
 

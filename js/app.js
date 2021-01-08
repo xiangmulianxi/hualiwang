@@ -123,4 +123,77 @@ app.get('/yong', (req, res) => {
         res.send(rows)
     })
 })
+
+// pang
+app.get('/home', (req, res) => {
+    var id = req.query.id;
+    var page = req.query.page;
+    connection.query(id == 0 ? `select * from gift limit ${(page - 1) * 28},28` : `select * from gift where type_id=${id} limit ${(page - 1) * 28},28`, function(err, rows, fields) {
+        res.send({
+            status: 200,
+            data: rows
+        })
+    })
+})
+
+//tab 切换
+app.get('/tab', (req, res) => {
+        var id = req.query.id;
+        connection.query(`select * from giftlist`, function(err, rows, fields) {
+            res.send({
+                status: 200,
+                data: rows
+            })
+        })
+    })
+    //获取大分类下分页 数据的长度
+app.get('/length', (req, res) => {
+        var id1 = req.query.type_id;
+        connection.query(id1 == 0 ? `select * from gift` : `select * from gift where type_id=${id1}`, function(err, rows, fields) {
+            res.send({
+                status: 200,
+                data: rows
+            })
+        })
+    })
+    //jump 跳转接口
+app.get('/jump', (req, res) => {
+        var id1 = req.query.id;
+        connection.query(`select * from gift where id=${id1}`, function(err, rows, fields) {
+            res.send({
+                status: 200,
+                data: rows
+            })
+        })
+    })
+    //cake蛋糕接口 字母
+app.get('/letter', (req, res) => {
+        connection.query(`select * from letters`, function(err, rows, fields) {
+            res.send({
+                status: 200,
+                data: rows
+            })
+        })
+    })
+    //cake蛋糕接口 城市
+app.get('/city', (req, res) => {
+        var i = req.query.id
+            // var light = req.query.light
+
+        connection.query(`select * from area where type_id=${i}`, function(err, rows, fields) {
+            res.send({
+                status: 200,
+                data: rows
+            })
+        })
+    })
+    //cake蛋糕接口 蛋糕内容
+app.get('/cake2', (req, res) => {
+    connection.query(`select * from cake2`, function(err, rows, fields) {
+        res.send({
+            status: 200,
+            data: rows
+        })
+    })
+})
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
