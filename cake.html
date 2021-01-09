@@ -282,6 +282,7 @@
         var city2 = document.getElementById('city2')
         var city3 = document.getElementById('city3')
         var city4 = document.getElementById('city4')
+            // var cake = document.getElementById('cake-content')
 
         axios.get('http://localhost:3000/letter').then(res => {
             console.log(res.data.data[0].letter);
@@ -311,7 +312,7 @@
 
 
         function getLetter() {
-            console.log(event.target.dataset.id);
+            // console.log(event.target.dataset.id);
             var id1 = event.target.dataset.id
             var i = event.target.innerText
 
@@ -329,7 +330,7 @@
                     id,
                 }
             }).then(res => {
-                console.log(222, res);
+                // console.log(222, res);
                 var str1 = ""
                 for (var i = 0; i < res.data.data.length; i++) {
                     str1 += `
@@ -347,6 +348,66 @@
         getCity(2, city2, 2)
         getCity(3, city3, 3)
         getCity(4, city4, 4)
+
+        //主体内容列表数据渲染
+        const cake_content = document.querySelector('.cake-content')
+        console.log(cake_content);
+        for (let i = 1; i < 18; i++) {
+            list(i)
+        }
+
+        function list(num = 1) {
+            axios.get('http://localhost:3000/cake2', {
+                params: {
+                    num: num
+                }
+            }).then(res => {
+                console.log(res.data);
+                // console.log(res.data.data.length);
+                // console.log(111,Math.floor((res.data.data.length)/4));
+                var str = ""
+                console.log('hello')
+                str += `
+                    <div>
+                        <div class="title007 wrap">
+                            <h2>廿一客蛋糕</h2>
+                            <p>（可配送北京，上海，广州，深圳，天津，杭州，苏州，无锡）</p>
+                            <span>更多廿一客蛋糕 >></span>
+                        </div>
+                        <div class="cake-wrap wrap">
+                `
+                for (var i = 0; i < res.data.data.length; i++) {
+                    str += `                     
+                        <div class="cake-content1" onclick="jump(${res.data.data[i].id})">
+                            <a href="javascript:;">
+                                <div class="box">
+                                    <img src="${res.data.data[i].url}" alt="">
+                                    <p class="price">￥${res.data.data[i].price}</p>
+                                    <div class="txt">
+                                        <p>${res.data.data[i].title}</p>
+                                        <p>${res.data.data[i].power}</p>
+                                    </div>
+                                    <div class="buy-car001">
+                                        <span>${res.data.data[i].collect}</span>    
+                                        <span>${res.data.data[i].car}</span>    
+                                    </div>
+                                </div>
+                            </a>
+                        </div>         
+                                `
+
+                }
+                str += '</div></div>'
+
+                cake_content.innerHTML += str;
+
+            })
+        }
+
+        function jump(i) {
+            localStorage.setItem("jump-id", i)
+            window.location.href = 'detail-cake.html'
+        }
     </script>
 </body>
 
