@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/pgy-css/reset.css">
+    <link rel="stylesheet" href="./css/pgy-css/detail-cake.css">
+</head>
+
+<body>
+    <div class="app">
+        <header>
+            <div class="header-top wrap">
+                <div class="header-top-left">
+                    <ul>
+                        <li><a href="javascript:;">收藏鲜花网(hua.com)</a></li>
+                        <li class="wechat">
+                            <a href="javascript:;">关注微信</a>
+                            <div class="img1">
+                                <img src="./img/pgyimg/detail1.png" alt="">
+                                <span>扫码关注</span>
+                                <p>回复"礼物" 更多惊喜！</p>
+                            </div>
+                        </li>
+                        <li class="flower">
+                            <a href="javascript:;">花礼网app</a>
+                            <div class="img2">
+                                <img src="./img/pgyimg/detail2.png" alt="">
+                                <p>新人专享100元APP礼包</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-top-right">
+                    <ul>
+                        <li><a href="javascript:;">你好，请登录
+                        <li>注册</li></a></li>
+                        <li><a href="javascript:;">订单查询</a></li>
+                        <li><a href="javascript:;">客户服务 <i></i></a></li>
+                        <li><a href="javascript:;">购物车(0)</a></li>
+                        <li><a href="javascript:;">中国鲜花礼品网:中国鲜花网领先品牌</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 中间部分 -->
+            <div class="logo-out">
+                <div class="logo wrap">
+                    <div class="logo-img">
+
+                    </div>
+                    <div class="search">
+                        <div></div>
+                        <input type="text" name="" id="" placeholder='商品搜索'>
+                        <span><a href="javascript:;">搜索</a></span>
+                    </div>
+                    <div class="phone">
+                        <div>
+                            <span class="phone1"></span>
+                            <span> 400-889-8188</span>
+                        </div>
+                        <div>
+                            <span class="phone2"></span>
+                            <span><a href="javascript:;">在线客服</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 下边导航 -->
+            <nav>
+                <div class="bot-nav wrap">
+                    <div class="title">
+                        <span></span>
+                        <h2>所有分类</h2>
+                    </div>
+                    <ul>
+                        <li><a href="javascript:;">首页</a></li>
+                        <li><a href="javascript:;">鲜花</a></li>
+                        <li><a href="javascript:;">永生花</a></li>
+                        <li><a href="javascript:;">蛋糕</a></li>
+                        <li><a href="javascript:;">礼品</a></li>
+                        <li><a href="javascript:;">巧克力</a></li>
+                        <li><a href="javascript:;">花语大全</a></li>
+                        <li><a href="javascript:;">企业团购</a></li>
+                        <li><a href="javascript:;">设计师臻选</a></li>
+                        <li><a href="javascript:;">元旦节鲜花礼物</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- 内容 -->
+        <div class="content wrap">
+            <div id="render"></div>
+            <div class="content-right">
+                <div id="cont"></div>
+                <!-- 渲染结束 -->
+                <div class="box">
+                  <div>
+                      <span>材料</span>
+                      <p> 
+                        品牌: T400
+                        <br>
+                        金属材质: 925银
+                        <br>
+                        镶嵌材质: 纯银镶嵌宝石
+                        <br>
+                        T400耳钉女纯银一星期耳钉礼盒简约气质韩国个性耳环星期组合套装</p>
+                  </div>
+                  <div>
+                      <span>包装</span>
+                      <p> 精美礼盒，肥皂花不固定式装饰，防止散落，勿倒置</p>
+                  </div>
+                </div>
+                <div class="explain">
+                    <span>配送说明</span>
+                    <p>顺丰空运深圳发货, 全国可达, 包邮!</p>
+                </div>
+                <div class="buy-now">
+                   <a href="javascript:;">加入购物车</a>
+                   <a href="javascript:;">立即购买</a>
+                   <a href="javascript:;">收藏商品</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        var render = document.getElementById('render')
+        var cont = document.getElementById('cont')
+        axios.get("http://localhost:3000/jump2", {
+            params: {
+                id: localStorage.getItem('jump-id')
+            }
+        }).then(res => {
+            console.log(res.data.data[0]);
+            console.log(localStorage.getItem('jump-id'));
+
+            render.innerHTML = `
+                     <img src="${res.data.data[0].url}" alt="图片丢失">
+            `
+        }).catch(err => {
+            console.log(err);
+        })
+
+
+
+        axios.get("http://localhost:3000/jump2", {
+            params: {
+                id: localStorage.getItem('jump-id')
+            }
+        }).then(res => {
+            console.log(res.data.data[0]);
+            console.log(localStorage.getItem('jump-id'));
+
+            cont.innerHTML = `
+                     <h2>${res.data.data[0].title}</h2>
+                     <p>[${res.data.data[0].power}]</p>
+                     <div>
+                       <span>售价</span>    
+                       <span>${res.data.data[0].price}</span>    
+                       <span>手机专享价</span>    
+                       <span>${res.data.data[0].price}</span> 
+                    </div>
+            `
+        }).catch(err => {
+            console.log(err);
+        })
+    </script>
+</body>
+
+</html>
