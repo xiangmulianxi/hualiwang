@@ -352,6 +352,97 @@ body {
 .show22{
     color: #ff8833!important;
 }
+/* 中间 列表渲染*/
+.title007{
+    height: 32px;
+    line-height: 32px;
+    background-color: #FFE7E8;
+}
+.title007 h2,.title007 p{
+    float: left;
+    color: #737373;
+}
+.title007 span{
+    float: right;
+    font-size: 12px;
+    color: #737373;
+    margin-right: 5px;
+}
+.title007 h2{
+    margin-top: 10px;
+    color: #4D4D4D;
+    font-size: 16px;
+}
+.title007 p{
+    margin: 3px 0 0 20px;
+}
+.cake-wrap{
+    overflow: hidden;
+}
+.cake-content1{
+    border: 1px solid transparent;
+    width: 240px;
+    height: 368px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    float:left;
+}
+.cake-content1:hover{
+    box-sizing: border-box;
+    border: 1px solid #737373;
+}
+.cake-content1 img{
+    width: 220px;
+    height: 240px;
+}
+.cake-content1 .price{
+    color: #FF6A00;
+    font-weight: bold;
+}
+.txt{
+    margin: 10px 0 5px 0;
+}
+.txt p{
+height: 18px;
+}
+.txt p:nth-child(1){
+    width: 220px;
+    color: #999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.txt p:nth-child(2){
+    color: #FF6A00;
+}
+.txt:hover p{
+    color: #FF6A00;
+    text-decoration: underline;
+}
+.buy-car001{
+    overflow: hidden;
+}
+.buy-car001 span{
+    height: 25px;
+    line-height: 15px;
+    text-align: center;
+    border: 1px solid #999;
+    padding: 5px 0;
+    float: left;
+}
+.buy-car001 span:nth-child(1){
+    color: #888;
+    width: 50%;
+}
+.buy-car001 span:nth-child(2){
+    color: black;
+    width: 50%;
+}
+.buy-car001 span:hover {
+    color: #FF6A00;
+}
+/* 中间 列表渲染结束*/
 /* 主题内容结束 */
 
   /* 底部 */
@@ -414,4 +505,6 @@ body {
     font-size: 12px;
     margin: 10px 0;
 }
+
+
 

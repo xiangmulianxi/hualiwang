@@ -6,7 +6,7 @@ var connection = mysql.createConnection({
     host: 'localhost',
     port:'3304',
     user: 'root',
-    password: 'root',
+    password: 'rootroot',
     database: 'flowergift'
   })
   //链接数据库 
@@ -102,9 +102,21 @@ app.get('/city', (req, res) => {
   })
 }
 )
-//cake蛋糕接口 蛋糕内容
+//cake蛋糕接口 蛋糕内容   
 app.get('/cake2', (req, res) => {
-  connection.query(`select * from cake2`, function (err, rows, fields) {
+  var num = req.query.num
+  connection.query(`select * from cake2 limit ${(num - 1) * 4},4`, function (err, rows, fields) {
+    res.send({
+      status:200,
+      data:rows
+    })
+  })
+}
+)
+//jump 跳转接口 蛋糕
+app.get('/jump2', (req, res) => {
+  var id2 = req.query.id;
+  connection.query(`select * from cake2 where id=${id2}`, function (err, rows, fields) {
     res.send({
       status:200,
       data:rows
